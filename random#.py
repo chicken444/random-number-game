@@ -35,4 +35,3 @@ if win == 0:
     print('you lose.')
 else:
     print('you win!')
-            
