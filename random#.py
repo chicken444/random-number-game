@@ -4,7 +4,6 @@ number_of_guesses = 0
 win = 0
 greater = 'N.A'
 less = 'N.A'
-print(number)
 while number_of_guesses < 5 and win == 0:
     ans = input("guess a number?")
     if ans == '<':
