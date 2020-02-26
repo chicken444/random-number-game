@@ -4,21 +4,21 @@ number_of_guesses = 0
 win = 0
 greater = 'N.A'
 less = 'N.A'
-while number_of_guesses < 5 and win == 0:
+while number_of_guesses < 6 and win == 0:
     ans = input("guess a number?")
-    if ans == '<':
+    if ans == '>':
             greater = input('greater than?')
             greater = int(greater)
-            if greater < number:
+            if greater > number:
                 print('yes')
                 number_of_guesses += 1
             else:
                 print('no')
                 number_of_guesses += 1
-    elif ans == '>':
+    elif ans == '<':
             less = input('less than?')
             less = int(less)
-            if less > number:
+            if less < number:
                 print('yes')
                 number_of_guesses += 1
             else:
